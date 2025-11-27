@@ -11,39 +11,42 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "donate",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "donator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Donation",
+				"type": "event"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "TARGET_TIMESTAMP",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "donationRecords",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "donator",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "timestamp",
-						"type": "uint256"
-					}
-				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "donate",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -98,6 +101,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "top3Donators",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
@@ -133,11 +155,11 @@
 	},
 	"sources": {
 		"contracts/task3/BeggingContract.sol": {
-			"keccak256": "0xba784472ec74b3569b2787a11b50482495f88a7c0f326264dbcef3d1a143323b",
+			"keccak256": "0x7d391823551aec0de498b94b1f29fc63a1ae8773434f6d51236fdf6a36fdfbce",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://479b5fdf149123293aa9f833783f3b0cb7a32fc18356e85d9c8bac555b303b15",
-				"dweb:/ipfs/QmUBDyW3qQViyWdMMuiyYZh4grv3Y7QfrSUXbnb8UZuULB"
+				"bzz-raw://fe46f7f60f6b9c33d632cca1b7f199f9b622e35ea06da5180c6287d828b1554e",
+				"dweb:/ipfs/QmQ9ZEQ3p2CYeTE9Ttt2G6PSKih4qzcZ8wmHgZsZ9QYRwn"
 			]
 		}
 	},
